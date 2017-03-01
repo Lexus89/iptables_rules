@@ -164,7 +164,7 @@ then
 	echo '' >> $iptablespersistent
 	echo 'exit $rc' >> $iptablespersistent
 	chmod +x $iptablespersistent
-	update-rc.d -f iptables-persistent defaults >> $logfile 2>&1
+	update-rc.d -f iptables-persistent defaults
 else
 	echo "iptables-persistent already installed."
 fi
